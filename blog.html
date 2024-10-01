@@ -5,14 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ken Yau: Designer / Photographer / FE Developer</title>
-    <style>
-      .content-wrapper {display: flex; justify-content: space-between; align-items: flex-start; text-align: left; gap: 50px; margin-top: -20px; line-height: 2;}
-      a {text-decoration: none; color: rgb(210, 40, 40); font-weight: bold;}
-      .me {height: 800px; width: auto;}
-      .intro {font-weight: bold; font-size: 64px; margin-bottom: -30px; margin-top: -30px;}
-      body {background-color: rgb(172, 226, 255); margin-left: 100px; margin-right: 75px; font-family: Arial, Helvetica, sans-serif; padding-top: -10px;}
-      .menu {font-size: 24px; margin-bottom: 100px;}
-    </style>
+    <link rel="stylesheet" href="styles.css"
   </head>
   <body>
     <header style="display: flex; justify-content: space-between; margin-top: 50px; margin-bottom: 30px; font-size: 32px;">
@@ -27,33 +20,33 @@ to my photography website at kenoutofken.com opens in a new tab as required acco
       <nav class="menu" style="flex-shrink: 1">
         <ul style="list-style-type: none; display: flex; gap: 20px; margin-top: 50px; padding: 0;">
           <li style="display: inline">
-            <a href="index.html" style="text-decoration: none; color: #333; padding-right: 50px">HOME</a>
+            <a href="index.html" style="text-decoration: none; color: #333; margin-right: 50px;">HOME</a>
           </li>
           <li style="display: inline">
-            <a href="blog.html" style="text-decoration: none; color: #333; padding-right: 50px">BLOG</a>
+            <a href="blog.html" style="text-decoration: none; color: #333; margin-right: 50px;  background-color: White; border-radius: 24px; padding: 8px 16px;">BLOG</a>
           </li>
           <li>
-            <a href="links.html" style="text-decoration: none; color: #333; padding-right: 50px">LINKS</a>
+            <a href="links.html" style="text-decoration: none; color: #333; margin-right: 50px;">LINKS</a>
           </li>
           <li style="display: inline">
-            <a href="mailto:yauken@outlook.com" style="text-decoration: none; color: #333; padding-right: 50px">CONTACT</a>
+            <a href="mailto:yauken@outlook.com" style="text-decoration: none; color: #333; margin-right: 50px">CONTACT</a>
           </li>
-          <li style="display: inline">
-              <a href="http://www.instagram.com/kenoutofken/" target="_blank"><img src="assets/icons8-instagram-24.png"></a>
-          </li>
-          <li style="display: inline">
-              <a href="http://www.facebook.com/itskenoutofken/" target="_blank"><img src="assets/icons8-facebook-24.png"></a>
-          </li>
-          <li style="display: inline">
-              <a href="https://www.linkedin.com/in/kenoutofken/" target="_blank"><img src="assets/icons8-linkedin-24.png"></a>
-          </li>
-          <li style="display: inline">
-              <a href="http://www.pinterest.com/kenoutofken/" target="_blank"><img src="assets/icons8-pinterest-24.png"></a>
-          </li>
-          </li>
-        </ul>
-      </nav>
-    </header>
+          <li style="display: inline; margin-right: -12px;">
+            <a href="http://www.instagram.com/kenoutofken/" target="_blank"><img src="assets/icons8-instagram-24.png"></a>
+        </li>
+        <li style="display: inline; margin-right: -12px;">
+            <a href="http://www.facebook.com/itskenoutofken/" target="_blank"><img src="assets/icons8-facebook-24.png"></a>
+        </li>
+        <li style="display: inline; margin-right: -12px;">
+            <a href="https://www.linkedin.com/in/kenoutofken/" target="_blank"><img src="assets/icons8-linkedin-24.png"></a>
+        </li>
+        <li style="display: inline; margin-right: -12px;">
+            <a href="http://www.pinterest.com/kenoutofken/" target="_blank"><img src="assets/icons8-pinterest-24.png"></a>
+        </li>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
 <!-- PROJECT REQUIREMENT: The following blog post is to use the heading requirements as described by the project outline. A larger <h1> tag was used for
 title of the blog post, with the body text in 2 separate paragraphs using the <p> tag as required for the project. Each body paragraph
@@ -70,18 +63,18 @@ used the <h3> tag for smaller text, as well as a style specification to increase
   </h3>
 <!-- PROJECT REQUIREMENT: The following images meets the requirement for embedded images with alt attributes. -->
   <div class="image-gallery">
-    <img style="max-height: 500px" src="media/DSCF9050.jpg" alt="A Strawberry Radler">
-    <img style="max-height: 500px" src="media/DSCF9055.jpg" alt="More Pizza">
+    <img class="blogpics" style="max-height: 500px" src="media/DSCF9050.jpg" alt="A Strawberry Radler">
+    <img class="blogpics" style="max-height: 500px" src="media/DSCF9055.jpg" alt="More Pizza">
   </div>
   <h3 style="line-height: 2">
     Next we went down to the beach for a walk. While it was sunny, it was actually pretty cold. But it wasn't hard to be inspired to take some street photography here. As I mentioned before, I've been really busy and haven't had
     a lot of time to actually get out here and be creative with my camera. I hope to change that soon, as I'm starting to get more comfortable being a here in my new home. Stay tuned for more!
   </h3>
   <div class="image-gallery">
-    <img style="max-height: 500px" src="media/DSCF9058.jpg" alt="A couple enjoying the beach">
-    <img style="max-height: 500px" src="media/DSCF9060.jpg" alt="The Vancouver seawall">
-    <img style="max-height: 500px" src="media/DSCF9067.jpg" alt="The rocky shore">
-    <img style="max-height: 500px" src="media/DSCF9077.jpg" alt="Kat on the beach">
+    <img class="blogpics" style="max-height: 500px" src="media/DSCF9058.jpg" alt="A couple enjoying the beach">
+    <img class="blogpics" style="max-height: 500px" src="media/DSCF9060.jpg" alt="The Vancouver seawall">
+    <img class="blogpics" style="max-height: 500px" src="media/DSCF9067.jpg" alt="The rocky shore">
+    <img class="blogpics" style="max-height: 500px" src="media/DSCF9077.jpg" alt="Kat on the beach">
   </div>
 
   <hr style="margin-top: 36px; margin-bottom: 36px;">
@@ -98,9 +91,9 @@ used the <h3> tag for smaller text, as well as a style specification to increase
     </h3>
 <!-- PROJECT REQUIREMENT: The following images meets the requirement for embedded images with alt attributes. -->
     <div class="image-gallery">
-      <img style="max-height: 500px" src="media/DSCF8983.jpg" alt="Plane landing in Richmond">
-      <img style="max-height: 500px" src="media/DSCF8996.jpg" alt="Kat eating a hot dog">
-      <img style="max-height: 500px" src="media/DSCF8997.jpg" alt="A delicious hot dog">
+      <img class="blogpics" style="max-height: 500px" src="media/DSCF8983.jpg" alt="Plane landing in Richmond">
+      <img class="blogpics" style="max-height: 500px" src="media/DSCF8996.jpg" alt="Kat eating a hot dog">
+      <img class="blogpics" style="max-height: 500px" src="media/DSCF8997.jpg" alt="A delicious hot dog">
     </div>
     <h3 style="line-height: 2">
       After shopping we decided to do something a little more unique and headed by train down to Gastown for some live music and dinner. We managed to get
@@ -108,9 +101,9 @@ used the <h3> tag for smaller text, as well as a style specification to increase
       played a set while we ate dinner, who is from Alberta! After dinner, it was back home to drop off our shopping and we ended up just crashing for the night.
     </h3>
     <div class="image-gallery">
-      <img style="max-height: 500px" src="media/DSCF9017.jpg" alt="Ken having a beer at Guilt and Co">
-      <img style="max-height: 500px" src="media/DSCF9018.jpg" alt="A performance at Guilt and Co">
-      <img style="max-height: 500px" src="media/DSCF9024.jpg" alt="A pizza from Guilt and Co">
+      <img class="blogpics" style="max-height: 500px" src="media/DSCF9017.jpg" alt="Ken having a beer at Guilt and Co">
+      <img class="blogpics" style="max-height: 500px" src="media/DSCF9018.jpg" alt="A performance at Guilt and Co">
+      <img class="blogpics" style="max-height: 500px" src="media/DSCF9024.jpg" alt="A pizza from Guilt and Co">
     </div>
 
     <p style="font-style: italic; margin-top: 100px">Copyright &copy Ken Yau. All rights reserved.</p>

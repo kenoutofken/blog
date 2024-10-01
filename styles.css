@@ -1,0 +1,75 @@
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    gap: 50px;
+    margin-top: -20px;
+    line-height: 2;
+}
+a {
+    text-decoration: none;
+    color: rgb(210, 40, 40);
+    font-weight: bold;
+}
+a:hover {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.me {
+    height: 800px;
+    width: auto;
+}
+.intro {
+    font-weight: bold;
+    font-size: 64px;
+    margin-bottom: -30px;
+    margin-top: -30px;
+}
+body {
+    background-color: rgb(172, 226, 255);
+    margin-left: 100px;
+    margin-right: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: -10px;
+}
+.menu {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+.menu a {
+    padding: 8px 16px;
+    border-radius: 24px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+.menu a:hover {
+    background-color: White;
+    border-radius: 24px;
+    padding: 8px 16px;
+}
+.checkme {
+    background-color: black;
+    transition: all 0.3s ease;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 24px;
+    color: white;
+    margin-top: 24px
+}
+.checkme:hover {
+    background-color: white;
+    color: black;
+}
+.blogpics {
+    border: 5px solid white;
+}
+.videopanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    padding: 100px;
+}
