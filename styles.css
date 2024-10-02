@@ -1,4 +1,5 @@
 .content-wrapper {
+    font-family: "Roboto", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -6,6 +7,17 @@
     gap: 50px;
     margin-top: -20px;
     line-height: 2;
+    max-width: 75%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 24px;
+    padding-left: 48px;
+    padding-top: 24px;
+    padding-right: 48px;
+    padding-bottom: 24px;
+    color: white;
+}
+h1 {
+    font-family: "Oswald", sans-serif;  
 }
 a {
     text-decoration: none;
@@ -28,6 +40,7 @@ a:hover {
     margin-top: -30px;
 }
 body {
+    font-family: "Roboto", sans-serif;
     background-color: rgb(172, 226, 255);
     margin-left: 100px;
     margin-right: 75px;
@@ -35,36 +48,50 @@ body {
     padding-top: -10px;
 }
 .menu {
+    font-family: "Oswald", sans-serif;
     font-size: 24px;
     margin-bottom: 100px;
 }
 .menu a {
     padding: 8px 16px;
-    border-radius: 24px;
+    border-radius: 8px;
     transition: all 0.3s ease;
     background-color: transparent;
 }
 .menu a:hover {
     background-color: White;
-    border-radius: 24px;
+    border-radius: 8px;
     padding: 8px 16px;
 }
+.menu a img {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    transition: none;
+}
+.menu a:hover img {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    transition: none;
+}
 .checkme {
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease;
     padding: 15px 30px;
     border: none;
     border-radius: 15px;
     font-size: 24px;
-    color: white;
+    color: black;
     margin-top: 24px
 }
 .checkme:hover {
-    background-color: white;
-    color: black;
+    background-color: red;
+    color: white;
 }
 .blogpics {
     border: 5px solid white;
+    max-width: 35%;
 }
 .videopanel {
     display: flex;
@@ -72,4 +99,15 @@ body {
     align-items: center;
     gap: 36px;
     padding: 100px;
+}
+.blog {
+    font-family: "Roboto", sans-serif;
+    max-width: 75%;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 24px;
+    padding-left: 48px;
+    padding-top: 24px;
+    padding-right: 48px;
+    padding-bottom: 24px;
+    color: white;
 }
