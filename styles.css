@@ -157,6 +157,7 @@ ul {
         height: fit-content;
         padding-bottom: 20px;
         gap: 12px;
+        margin-left: 10px;
     }
     body {
         flex-direction: column;
@@ -202,5 +203,6 @@ ul {
     height: fit-content;
     transform:translateY(24px);
     margin-right: 0;
+    margin-left: 10px;
     }
 }
