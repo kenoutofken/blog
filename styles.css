@@ -168,7 +168,7 @@ footer {
 }
 @media (max-width: 1080px) {
     header {
-        padding: 15px 0;
+        padding: 20px 0;
         justify-content: center;
     }
     body {
@@ -200,7 +200,8 @@ footer {
     #menubar {
         font-size: 10px;
         gap: 4px;
-        transform:translateX(-28px)
+        padding: 0;
+        margin: 0;
     }
     #sitelogo {
         display: none;
@@ -218,7 +219,8 @@ footer {
         justify-content: center;
         gap: 20px;
         list-style-type: none;
-        transform:translateX(-28px);
+        padding: 0;
+        margin: 0;
         margin-bottom: -5px;
     }
 }
