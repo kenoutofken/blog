@@ -46,15 +46,16 @@ body {
     padding-right: 48px;
     padding-bottom: 24px;
     color: white;
-    opacity: 0;  /* Initially hidden */
-    transform: translateX(-100%); /* Off-screen left */
-    animation: content-wrapper 0.5s forwards ease-out;
-    animation-delay: 0.5s;  /* Delayed to simulate scroll trigger */
+    opacity: 0;
+    transform: translateY(100%);
+    animation: content-wrapper 0.25s forwards ease-out;
+    animation-delay: 0.5s;
 }
+
 @keyframes content-wrapper {
     to {
-      transform: translateX(0); /* Slide to the right (back to its original position) */
-      opacity: 1;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 /* PROJECT REQUIREMENT: The following are custom CSS for h1, h2, and p as required for the CSS Typography requirement for the assignment #03.
@@ -140,15 +141,15 @@ a:hover {
     padding-right: 48px;
     padding-bottom: 24px;
     color: white;
-    opacity: 0;  /* Initially hidden */
-    transform: translateX(-100%); /* Off-screen left */
-    animation: content-wrapper 0.5s forwards ease-out;
-    animation-delay: 0.5s;  /* Delayed to simulate scroll trigger */
+    opacity: 0;
+    transform: translateY(100%);
+    animation: blog 0.5s forwards ease-out;
+    animation-delay: 0.5s;
 }
 @keyframes blog {
     to {
-      transform: translateX(0); /* Slide to the right (back to its original position) */
-      opacity: 1;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 ol {
