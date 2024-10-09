@@ -46,6 +46,16 @@ body {
     padding-right: 48px;
     padding-bottom: 24px;
     color: white;
+    opacity: 0;  /* Initially hidden */
+    transform: translateX(-100%); /* Off-screen left */
+    animation: content-wrapper 0.5s forwards ease-out;
+    animation-delay: 0.5s;  /* Delayed to simulate scroll trigger */
+}
+@keyframes content-wrapper {
+    to {
+      transform: translateX(0); /* Slide to the right (back to its original position) */
+      opacity: 1;
+    }
 }
 /* PROJECT REQUIREMENT: The following are custom CSS for h1, h2, and p as required for the CSS Typography requirement for the assignment #03.
 the size of the font is different between the 3 tags, and "Oswald" is used as the font for the headers, and "helvetica" is used for the paragraphs. */
@@ -130,6 +140,16 @@ a:hover {
     padding-right: 48px;
     padding-bottom: 24px;
     color: white;
+    opacity: 0;  /* Initially hidden */
+    transform: translateX(-100%); /* Off-screen left */
+    animation: content-wrapper 0.5s forwards ease-out;
+    animation-delay: 0.5s;  /* Delayed to simulate scroll trigger */
+}
+@keyframes blog {
+    to {
+      transform: translateX(0); /* Slide to the right (back to its original position) */
+      opacity: 1;
+    }
 }
 ol {
     margin-left: 50px;
