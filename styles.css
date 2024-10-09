@@ -147,17 +147,23 @@ ul {
     list-style-type: none;
     display: flex;
     gap: 50px;
-    margin-right: 100px;
 }
 @media (max-width: 1080px) {
     header {
         display: flex;
-        justify-content: center;
-        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: black;
+        width: fit-content;
         height: fit-content;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        gap: 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 20px 24px;
+        border-radius: 24px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
     body {
         flex-direction: column;
@@ -189,20 +195,20 @@ ul {
         gap: 15px;
     }
     #sitelogo {
-        display: none;
+        display: flex;
+        max-height: 20px;
     }
     #socialmedia {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    justify-content: center;
-    background-color: black;
-    z-index: 1000;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: fit-content;
-    transform:translateY(24px);
-    margin-right: 0;
+        display: flex;
+        justify-content: flex-start;
+        background-color: black;
+        width: fit-content;
+        height: fit-content;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 20px 24px;
+        border-radius: 24px;
     }
 }
