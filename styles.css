@@ -191,12 +191,12 @@ ul {
         margin-left: 15px;
     }
     #menubar {
-        font-size: 12px;
-        gap: 15px;
+        font-size: 10px;
+        gap: 4px;
+        transform:translateX(-28px)
     }
     #sitelogo {
-        display: flex;
-        max-height: 20px;
+        display: none;
     }
     #socialmedia {
         display: flex;
