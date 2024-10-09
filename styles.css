@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     background-color: black;
-    padding: 30px 0px;
+    padding-top: 30px;
     width: 100%;
     height: fit-content;
     position: fixed;
@@ -155,9 +155,9 @@ ul {
         justify-content: center;
         flex-direction: row;
         height: fit-content;
-        padding-bottom: 20px;
+        padding-top: 10px;
+        padding-bottom: 15px;
         gap: 12px;
-        margin-left: 10px;
     }
     body {
         flex-direction: column;
@@ -199,10 +199,10 @@ ul {
     justify-content: center;
     background-color: black;
     z-index: 1000;
-    padding: 30px 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     height: fit-content;
     transform:translateY(24px);
     margin-right: 0;
-    margin-left: 10px;
     }
 }
