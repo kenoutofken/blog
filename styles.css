@@ -1,14 +1,45 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 30px 0px;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-bottom: 60px;
+}
+#sitelogo {
+    max-height: 80px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    /* PROJECT REQUIREMENT: The following CSS is required for assignment #03. It defines the color of the page, in this case an RGB value of 172, 226, and 255. */
+    background-color: rgb(70, 76, 87);
+    margin-left: 100px;
+    margin-right: 75px;
+    font-family: Helvetica, sans-serif;
+    padding-top: -100px;
+    background-image: url("media/DSCF9067-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 200px;
+    color: white;
+}
 .content-wrapper {
     font-family: "Roboto", sans-serif;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
     text-align: left;
-    gap: 50px;
-    margin-top: -20px;
     line-height: 2;
-    max-width: 75%;
-    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 1920px;
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 24px;
     padding-left: 48px;
     padding-top: 24px;
@@ -16,8 +47,29 @@
     padding-bottom: 24px;
     color: white;
 }
+/* PROJECT REQUIREMENT: The following are custom CSS for h1, h2, and p as required for the CSS Typography requirement for the assignment #03.
+the size of the font is different between the 3 tags, and "Oswald" is used as the font for the headers, and "helvetica" is used for the paragraphs. */
 h1 {
-    font-family: "Oswald", sans-serif;  
+    font-family: "Oswald", sans-serif;
+    font-variant: small-caps;
+    color: rgb(210, 40, 40);
+    font-size: 7em;
+    margin-bottom: -16px;
+    margin-top: -16px;
+}
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-variant: small-caps;
+    color: rgb(210, 40, 40);
+    font-size: 4em;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+p {
+    font-family: helvetica, san-serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 a {
     text-decoration: none;
@@ -25,7 +77,7 @@ a {
     font-weight: bold;
 }
 a:hover {
-    color: black;
+    color: white;
     font-weight: bolder;
     text-decoration: underline;
 }
@@ -39,75 +91,115 @@ a:hover {
     margin-bottom: -30px;
     margin-top: -30px;
 }
-body {
-    font-family: "Roboto", sans-serif;
-    background-color: rgb(172, 226, 255);
-    margin-left: 100px;
-    margin-right: 75px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-top: -10px;
+#menubar {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+    gap: 75px;
 }
 .menu {
+    display: flex;
     font-family: "Oswald", sans-serif;
-    font-size: 24px;
-    margin-bottom: 100px;
+    font-size: 4em;
 }
 .menu a {
     padding: 8px 16px;
     border-radius: 8px;
     transition: all 0.3s ease;
     background-color: transparent;
+    padding: 8px 16px;
+    color: white;
 }
 .menu a:hover {
     background-color: White;
     border-radius: 8px;
     padding: 8px 16px;
-}
-.menu a img {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    transition: none;
-}
-.menu a:hover img {
-    background-color: transparent;
-    padding: 0;
-    border: none;
-    transition: none;
-}
-.checkme {
-    background-color: white;
-    transition: all 0.3s ease;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 15px;
-    font-size: 24px;
     color: black;
-    margin-top: 24px
-}
-.checkme:hover {
-    background-color: red;
-    color: white;
 }
 .blogpics {
     border: 5px solid white;
     max-width: 35%;
 }
-.videopanel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 36px;
-    padding: 100px;
-}
-.blog {
+.blog {         
     font-family: "Roboto", sans-serif;
-    max-width: 75%;
-    background-color: rgba(0, 0, 0, 0.75);
+    max-width: 1920px;
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 24px;
     padding-left: 48px;
     padding-top: 24px;
     padding-right: 48px;
     padding-bottom: 24px;
     color: white;
+}
+ol {
+    margin-left: 50px;
+    font-family: helvetica, san-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+ul {
+    margin-left: 50px;
+    font-family: helvetica, san-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+#socialmedia {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+    margin-right: 100px;
+}
+@media (max-width: 1080px) {
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 20px;
+        gap: 12px;
+    }
+    body {
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 124px;
+    }
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: 1em;
+    }
+    ul {
+        font-size: 1em;
+        margin-left: 15px;
+    }
+    ol {
+        font-size: 1em;
+        margin-left: 15px;
+    }
+    #menubar {
+        font-size: 12px;
+        gap: 15px;
+        transform:translatex(-48px)
+    }
+    #sitelogo {
+        display: none;
+    }
+    #socialmedia {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    background-color: black;
+    z-index: 1000;
+    padding: 30px 50px;
+    height: fit-content;
+    transform:translateY(24px)
+    }
 }
