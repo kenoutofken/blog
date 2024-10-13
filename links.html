@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<!-- PROJECT REQUIREMENT: This index.html document includes <!DOCTYPE>, <html>, <head>, and <body> tags correctly. -->
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ken Yau: Designer / Photographer / FE Developer</title>
+    <!-- ASSIGNMENT 03 REQUIREMENT: The following code links the external CSS file to this HTML file. -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- ASSIGNMENT 03 REQUIREMENT: THe following code links external fonts using Google Font to my website. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
-    <style></style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ken Yau: Designer / Photographer / FE Developer</title>
   </head>
 
   <body>
@@ -30,14 +31,8 @@
       <nav class="menu">
         <ul id="menubar">
           <li>
-            <a href="index.html" style="text-decoration: none">HOME</a>
-          </li>
-          <li>
-            <a href="blog.html" style="text-decoration: none">BLOG</a>
-          </li>
-          <li>
             <a
-              href="links.html"
+              href="index.html"
               style="
                 text-decoration: none;
                 color: black;
@@ -45,8 +40,17 @@
                 border-radius: 8px;
                 padding: 8px 16px;
               "
-              >LINKS</a
+              >HOME</a
             >
+          </li>
+          <li>
+            <a href="blog.html" style="text-decoration: none">BLOG</a>
+          </li>
+          <li>
+            <a href="projects.html" style="text-decoration: none">PROJECTS</a>
+          </li>
+          <li>
+            <a href="links.html" style="text-decoration: none">LINKS</a>
           </li>
           <li>
             <a href="mailto:yauken@outlook.com" style="text-decoration: none"
@@ -94,12 +98,12 @@
     <!-- NOTES: This division class "content-wrapper" contains the main content of the page. It allows for the division of content horizontally on the web page. -->
     <div class="content-wrapper">
       <h2>My favorite websites!</h2>
-      <h3>
+      <p>
         This page features a curated list of websites and videos that have
         inspired me in my creative journey. Whether you’re looking for design
         inspiration or educational content to sharpen your skills, these
         resources are my go-to picks.
-      </h3>
+      </p>
       <ol>
         <li>
           <a href="https://dribbble.com/">Dribble.com</a>: A vibrant community
@@ -165,7 +169,7 @@
           /></a>
         </li>
       </ul>
-      <p>Copyright &copy Ken Yau. All rights reserved.</p>
+      <h3>Copyright &copy Ken Yau. All rights reserved.</h3>
     </footer>
   </body>
 </html>

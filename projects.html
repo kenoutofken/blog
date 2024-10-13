@@ -23,7 +23,7 @@
     <title>Ken Yau: Designer / Photographer / FE Developer</title>
   </head>
 
-  <body>
+  <body style="background-color: black; background-image: none">
     <header>
       <div>
         <a href="index.html"><img id="sitelogo" src="assets/logo.png" /></a>
@@ -31,8 +31,14 @@
       <nav class="menu">
         <ul id="menubar">
           <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="blog.html" style="text-decoration: none">BLOG</a>
+          </li>
+          <li>
             <a
-              href="index.html"
+              href="projects.html"
               style="
                 text-decoration: none;
                 color: black;
@@ -40,14 +46,9 @@
                 border-radius: 8px;
                 padding: 8px 16px;
               "
-              >HOME</a
             >
-          </li>
-          <li>
-            <a href="blog.html" style="text-decoration: none">BLOG</a>
-          </li>
-          <li>
-            <a href="projects.html" style="text-decoration: none">PROJECTS</a>
+              PROJECTS</a
+            >
           </li>
           <li>
             <a href="links.html" style="text-decoration: none">LINKS</a>
@@ -96,37 +97,74 @@
     </header>
 
     <!-- NOTES: This division class "content-wrapper" contains the main content of the page. It allows for the division of content horizontally on the web page. -->
-    <div class="content-wrapper">
+    <div
+      style="text-align: center; justify-content: center"
+      class="content-wrapper"
+    >
+      >
       <div>
-        <h1>Hi! My name is Ken!</h1>
+        <h1>ReadAloud: A Children's Learning App (UX and UI Design Concept)</h1>
+      </div>
+      <div
+        style="display: flex; justify-content: center; flex-direction: column"
+      >
+        <img
+          style="max-height: 75%; max-width: 100%; object-fit: contain"
+          src="projects/ReadAloud - Mockup.png"
+        />
+        <h2>Project Rationale</h2>
         <p>
-          Welcome to my humble little web page. I am a Designer, Photographer,
-          and Front-End Developer based out of Vancouver, BC! Originally I am
-          from Edmonton, AB, and I am currently a student at Wilson School of
-          Design to expand my skills in web and interactive application
-          development. Every day has been a new experience for me so I thought
-          it would be great to create a space for me to gather my own thoughts
-          as I continue this journey towards the next chapter of my life. On my
-          website you will find my blog which contains:
+          The "ReadAloud" app concept was born from my personal experience
+          working in a restaurant as a server. I often saw parents trying to
+          keep their children occupied with games and cartoons on their devices.
+          I realized this was a lost opportunity to engage kids in a more
+          educational experience during their screen time. My concept for the
+          "ReadAloud" app is to use AI to create a karaoke-like experience for
+          kids, that encourages them to read the ebooks out loud, with the AI
+          acting as a tool to help kids with words that they struggle with. The
+          app tracks progress to inform parents of their child's learning, but
+          ultimately the goal is to attract children with an experience that is
+          fun and engaging. AI will also be used to create animations for each
+          page to immerse children in their reading.
         </p>
-        <ul>
-          <li>
-            Thoughts and reflections of my experiences here in my new home.
-          </li>
-          <li>Photography from my adventures!</li>
-          <li>Examples of my front-end development and design work.</li>
-          <li>
-            Links to some design and creative related websites for inspiration
-            and reference.
-          </li>
-        </ul>
+        <h2>Defining the Problem</h2>
         <p>
-          If you are interested, you can also check out my full photography
-          portfolio at
-          <a href="http://www.kenoutofken.com">www.kenoutofken.com</a>! I'm
-          always looking to collaborate with other creatives, so don't hesitate
-          to reach out! Thanks for visiting!
+          Parents often struggle to find activities for their children that
+          allows them to have fun while also facilitating growth and learning.
+          Cartoons and games are often what they turn to from my own personal
+          observations, but these activities are passive, and do not provide any
+          tools for the child to learn nor any ways for parents to document
+          their child's educational development. “ReadAloud” aims to solve this
+          problem by creating an app that is easy and fun to use for kids, while
+          also creating a learning experience that fosters growth. It combines
+          the educational experience of reading with animated cartoons. All the
+          while, the app provides tools that allow parents to see their child's
+          learning through achievements and progress tracking.
         </p>
+        <h2>Identifying the User</h2>
+        <p>
+          The app is designed for young children between the ages of 6-11.
+          Children's books are provided at various levels to allow for children
+          across the age range and skill level to benefit from their experience.
+        </p>
+        <img
+          style="max-height: 75%; max-width: 100%; object-fit: contain"
+          src="projects/ReadAloud - User Persona.png"
+        />
+        <img
+          style="max-height: 75%; max-width: 100%; object-fit: contain"
+          src="projects/ReadAloud - Empathy Map.png"
+        />
+        <h2>Concept Prototype</h2>
+        <p>
+          Below is the final high fidelity concept for my app. The design
+          emphasizes a personalized experience for the user, with a minimalist
+          design that focuses the user on the reading activity.
+        </p>
+        <img
+          style="max-height: 75%; max-width: 100%; object-fit: contain"
+          src="projects/ReadAloud - High Fidelity.png"
+        />
       </div>
     </div>
     <p
@@ -172,7 +210,7 @@
           /></a>
         </li>
       </ul>
-      <h3>Copyright &copy Ken Yau. All rights reserved.</h3>
+      <p>Copyright &copy Ken Yau. All rights reserved.</p>
     </footer>
   </body>
 </html>

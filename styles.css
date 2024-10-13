@@ -2,6 +2,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* ASSIGNMENT 03 REQUIREMENT: The following code defines a different color for my header, main (body), and footer. */
     background-color: black;
     padding-top: 30px;
     width: 100%;
@@ -15,11 +16,13 @@ header {
 #sitelogo {
     max-height: 80px;
 }
+/* ASSIGNMENT 03 REQUIREMENT: CSS Box Model is used throughout this stylesheet to create padding, margins, and borders around
+various sections to create the intended layout. */
 body {
     display: flex;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-    /* PROJECT REQUIREMENT: The following CSS is required for assignment #03. It defines the color of the page, in this case an RGB value of 172, 226, and 255. */
+    /* ASSIGNMENT 03 REQUIREMENT: The following code defines a different color for my header, main (body), and footer. */
     background-color: rgb(70, 76, 87);
     margin-left: 75px;
     margin-right: 75px;
@@ -53,14 +56,13 @@ body {
     animation: content-wrapper 0.25s forwards ease-out;
     animation-delay: 0.5s;
 }
-
 @keyframes content-wrapper {
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-/* PROJECT REQUIREMENT: The following are custom CSS for h1, h2, and p as required for the CSS Typography requirement for the assignment #03.
+/* ASSIGNMENT 03 REQUIREMENT: The following are custom CSS for h1, h2, and p as required for the CSS Typography requirement for the assignment #03.
 the size of the font is different between the 3 tags, and "Oswald" is used as the font for the headers, and "helvetica" is used for the paragraphs. */
 h1 {
     font-family: "Oswald", sans-serif;
@@ -83,7 +85,10 @@ p {
     color: white;
     font-size: 1.5em;
     font-weight: bold;
+    line-height: 2;
 }
+/* ASSIGNMENT 03 REQUIREMENT: The following code changes the display of my links. It makes the default color for the links red, 
+and when hovered over, it turns white. */
 a {
     text-decoration: none;
     color: rgb(210, 40, 40);
@@ -130,6 +135,8 @@ a:hover {
     padding: 8px 16px;
     color: black;
 }
+/* ASSIGNMENT 03 REQUIREMENT: The following code applies to the images in the blog section of the website. It creates a white
+border around the images for visual enhancement. */
 .blogpics {
     border: 5px solid white;
     max-height: 50px;
@@ -156,17 +163,21 @@ a:hover {
         transform: translateY(0);
     }
 }
+/* ASSIGNMENT 03 REQUIREMENT: The following code adds a margin to my <ul> and <ol> list items. The bullet points for both of
+these lists has been customized to a square. */
 ol {
     margin-left: 50px;
     font-family: helvetica, san-serif;
     font-weight: bold;
     font-size: 24px;
+    list-style-type: square;
 }
 ul {
     margin-left: 50px;
     font-family: helvetica, san-serif;
     font-weight: bold;
     font-size: 24px;
+    list-style-type: square;
 }
 #socialmedia {
     list-style-type: none;
@@ -177,6 +188,7 @@ ul {
     display: none;
 }
 footer {
+    /* ASSIGNMENT 03 REQUIREMENT: The following code defines a different color for my header, main (body), and footer. */
     background-color: black;
     padding: 10px;
     width: 100%;
@@ -191,6 +203,8 @@ footer {
     font-size: 10px;
     font-style: italic;
 }
+/* ASSIGNMENT 03 REQUIREMENT: The following code allows for my website to be responsive. Using the media query, the website
+changes its layout when a screen size smaller than 1080px wide is used to access it. */
 @media (max-width: 1080px) {
     header {
         padding: 20px 0;
