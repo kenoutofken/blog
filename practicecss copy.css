@@ -1,0 +1,52 @@
+    body {
+      background-image: url('media/DSCF9099.jpg');
+      color: white;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      top: 0;
+      width: 100%;
+      background-color: #f1f1f1;
+      border: 1px solid black;
+      position: sticky;
+      height: auto;
+      overflow: auto;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      text-align: center;
+      color: black;
+    }
+    li a:hover {
+      background-color: white;
+      color: black;
+    }
+    li a.active {
+      background-color: green;
+      color: white;
+    }
+    li a:hover:not(.active) {
+      background-color: green;
+      color: white;
+    }
+    div {
+      margin-top: 50px;
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 1px 1
+    }
