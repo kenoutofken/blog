@@ -67,36 +67,35 @@ the size of the font is different between the 3 tags, and "Oswald" is used as th
 h1 {
     font-family: "Oswald", sans-serif;
     font-variant: small-caps;
-    color: rgb(210, 40, 40);
-    font-size: 7em;
+    color: #f2ac0a;
+    font-size: 3em;
     margin-bottom: -16px;
     margin-top: -16px;
 }
 h2 {
     font-family: "Oswald", sans-serif;
     font-variant: small-caps;
-    color: rgb(210, 40, 40);
-    font-size: 4em;
+    color: #f2ac0a;
+    font-size: 2em;
     margin-top: 12px;
     margin-bottom: 12px;
 }
 p {
     font-family: helvetica, san-serif;
     color: white;
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: lighter;
     line-height: 2;
 }
 /* ASSIGNMENT 03 REQUIREMENT: The following code changes the display of my links. It makes the default color for the links red, 
 and when hovered over, it turns white. */
 a {
     text-decoration: none;
-    color: rgb(210, 40, 40);
+    color: #f2ac0a;
     font-weight: bold;
 }
 a:hover {
     color: white;
-    font-weight: bolder;
     text-decoration: underline;
 }
 .me {
@@ -139,8 +138,10 @@ a:hover {
 border around the images for visual enhancement. */
 .blogpics {
     border: 5px solid white;
-    max-height: 33%;
-    max-height: 33%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 16px;
 }
 .blog {         
     font-family: "Roboto", sans-serif;
@@ -169,15 +170,15 @@ these lists has been customized to a square. */
 ol {
     margin-left: 50px;
     font-family: helvetica, san-serif;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: lighter;
+    font-size: 1em;
     list-style-type: square;
 }
 ul {
     margin-left: 50px;
     font-family: helvetica, san-serif;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: lighter;
+    font-size: 1em;
     list-style-type: square;
 }
 #socialmedia {
@@ -213,9 +214,16 @@ footer {
 input[type="checkbox"] {
     display: none;
 }
+#active {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
 /* ASSIGNMENT 03 REQUIREMENT: The following code allows for my website to be responsive. Using the media query, the website
 changes its layout when a screen size smaller than 1080px wide is used to access it. */
-@media (max-width: 1280px) {
+@media (max-width: 1080px) {
     header {
         justify-content: space-between;
         padding: 8px 12px;
@@ -311,5 +319,24 @@ changes its layout when a screen size smaller than 1080px wide is used to access
     }
     input[type="checkbox"]:checked ~ .menu #menubar {
         right: 0%;
+    }
+    .content-wrapper {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    p {
+        font-weight: lighter;
+    }
+    ul {
+        font-weight: lighter;
+    }
+    ol {
+        font-weight: lighter;
+    }
+}
+@media (max-width: 1400px) {
+    #menubar {
+        gap: 25px;
+        font-size: 0.8em;
     }
 }
