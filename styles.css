@@ -255,7 +255,7 @@ changes its layout when a screen size smaller than 1080px wide is used to access
         display: flex;
         position: fixed;
         flex-direction: column;
-        top: 20px;
+        top: 40px;
         right: -150%;
         gap: 25px;
         font-size: auto;
