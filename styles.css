@@ -215,7 +215,7 @@ input[type="checkbox"] {
 }
 /* ASSIGNMENT 03 REQUIREMENT: The following code allows for my website to be responsive. Using the media query, the website
 changes its layout when a screen size smaller than 1080px wide is used to access it. */
-@media (max-width: 1080px) {
+@media (max-width: 1280px) {
     header {
         justify-content: space-between;
         padding: 8px 12px;
