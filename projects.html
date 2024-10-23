@@ -22,196 +22,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ken Yau: Designer / Photographer / FE Developer</title>
   </head>
-
-  <body style="background-color: black; background-image: none">
-    <header>
-      <div>
-        <a href="index.html"><img id="sitelogo" src="assets/logo.png" /></a>
-      </div>
-      <input type="checkbox" id="hamburger" />
-      <label for="hamburger" class="burger"></label>
-      <nav class="menu">
-        <ul id="menubar">
-          <li>
-            <a href="index.html">HOME</a>
-          </li>
-          <li>
-            <a href="blog.html" style="text-decoration: none">BLOG</a>
-          </li>
-          <li>
-            <a
-              href="projects.html"
-              style="
-                text-decoration: none;
-                color: black;
-                background-color: White;
-                border-radius: 8px;
-                padding: 8px 16px;
-              "
-            >
-              PROJECTS</a
-            >
-          </li>
-          <li>
-            <a href="links.html" style="text-decoration: none">LINKS</a>
-          </li>
-          <li>
-            <a href="mailto:yauken@outlook.com" style="text-decoration: none"
-              >CONTACT</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <ul id="socialmedia">
+  <header>
+    <div>
+      <a href="index.html"><img id="sitelogo" src="assets/logo.png" /></a>
+    </div>
+    <input type="checkbox" id="hamburger" />
+    <label for="hamburger" class="burger"></label>
+    <nav class="menu">
+      <ul id="menubar">
         <li>
-          <a href="http://www.instagram.com/kenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-instagram-24.png"
-              width="24px"
-              height="24px"
-          /></a>
+          <a href="index.html">HOME</a>
         </li>
         <li>
-          <a href="http://www.facebook.com/itskenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-facebook-24.png"
-              width="24px"
-              height="24px"
-          /></a>
+          <a href="blog.html" style="text-decoration: none">BLOG</a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/kenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-linkedin-24.png"
-              width="24px"
-              height="24px"
-          /></a>
+          <a id="active" href="projects.html" style="text-decoration: none"
+            >PROJECTS</a
+          >
         </li>
         <li>
-          <a href="http://www.pinterest.com/kenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-pinterest-24.png"
-              width="24px"
-              height="24px"
-          /></a>
+          <a href="links.html" style="text-decoration: none">LINKS</a>
+        </li>
+        <li>
+          <a href="mailto:yauken@outlook.com" style="text-decoration: none"
+            >CONTACT</a
+          >
         </li>
       </ul>
-    </header>
-
-    <!-- NOTES: This division class "content-wrapper" contains the main content of the page. It allows for the division of content horizontally on the web page. -->
-    <div
-      style="text-align: center; justify-content: center"
-      class="content-wrapper"
-    >
-      <div>
-        <h1>ReadAloud: A Children's Learning App (UX and UI Design Concept)</h1>
+    </nav>
+    <ul id="socialmedia">
+      <li>
+        <a href="http://www.instagram.com/kenoutofken/" target="_blank"
+          ><img src="assets/icons8-instagram-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/itskenoutofken/" target="_blank"
+          ><img src="assets/icons8-facebook-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/kenoutofken/" target="_blank"
+          ><img src="assets/icons8-linkedin-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+      <li>
+        <a href="http://www.pinterest.com/kenoutofken/" target="_blank"
+          ><img src="assets/icons8-pinterest-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+    </ul>
+  </header>
+  <body style="background-image: none; background-color: black">
+    <div style="display: block; margin: 0 auto; max-width: 1920px">
+      <div class="row">
+        <div class="a">
+          <h1>
+            ReadAloud: A Children's Learning App (UX and UI Design Concept)
+          </h1>
+        </div>
+        <div class="b">
+          <img
+            style="max-height: 100%; max-width: 100%; object-fit: contain"
+            src="projects/ReadAloud - Mockup.png"
+          />
+        </div>
+        <div class="c">
+          <div class="project-wrapper">
+            <h2>Project Rationale</h2>
+            <p>
+              The "ReadAloud" app concept was born from my personal experience
+              working in a restaurant as a server. I often saw parents trying to
+              keep their children occupied with games and cartoons on their
+              devices. I realized this was a lost opportunity to engage kids in
+              a more educational experience during their screen time. My concept
+              for the "ReadAloud" app is to use AI to create a karaoke-like
+              experience for kids, that encourages them to read the ebooks out
+              loud, with the AI acting as a tool to help kids with words that
+              they struggle with. The app tracks progress to inform parents of
+              their child's learning, but ultimately the goal is to attract
+              children with an experience that is fun and engaging. AI will also
+              be used to create animations for each page to immerse children in
+              their reading.
+            </p>
+          </div>
+        </div>
+        <div style="margin-bottom: 40px" class="d">
+          <div class="project-wrapper">
+            <h2>Defining the Problem</h2>
+            <p>
+              Parents often struggle to find activities for their children that
+              allows them to have fun while also facilitating growth and
+              learning. Cartoons and games are often what they turn to from my
+              own personal observations, but these activities are passive, and
+              do not provide any tools for the child to learn nor any ways for
+              parents to document their child's educational development.
+              “ReadAloud” aims to solve this problem by creating an app that is
+              easy and fun to use for kids, while also creating a learning
+              experience that fosters growth. It combines the educational
+              experience of reading with animated cartoons. All the while, the
+              app provides tools that allow parents to see their child's
+              learning through achievements and progress tracking.
+            </p>
+            <h2>Identifying the User</h2>
+            <p>
+              The app is designed for young children between the ages of 6-11.
+              Children's books are provided at various levels to allow for
+              children across the age range and skill level to benefit from
+              their experience.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-bottom: 40px" class="e">
+          <div>
+            <img src="projects/ReadAloud - User Persona.png" />
+          </div>
+        </div>
+        <div class="f">
+        <div>
+          <img
+            style="max-width: 100%"
+            src="projects/ReadAloud - High Fidelity.png"
+          />
+        </div>
       </div>
-      <div
-        style="display: flex; justify-content: center; flex-direction: column"
-      >
-        <img
-          style="max-height: 75%; max-width: 100%; object-fit: contain"
-          src="projects/ReadAloud - Mockup.png"
-        />
-        <h2>Project Rationale</h2>
-        <p>
-          The "ReadAloud" app concept was born from my personal experience
-          working in a restaurant as a server. I often saw parents trying to
-          keep their children occupied with games and cartoons on their devices.
-          I realized this was a lost opportunity to engage kids in a more
-          educational experience during their screen time. My concept for the
-          "ReadAloud" app is to use AI to create a karaoke-like experience for
-          kids, that encourages them to read the ebooks out loud, with the AI
-          acting as a tool to help kids with words that they struggle with. The
-          app tracks progress to inform parents of their child's learning, but
-          ultimately the goal is to attract children with an experience that is
-          fun and engaging. AI will also be used to create animations for each
-          page to immerse children in their reading.
-        </p>
-        <h2>Defining the Problem</h2>
-        <p>
-          Parents often struggle to find activities for their children that
-          allows them to have fun while also facilitating growth and learning.
-          Cartoons and games are often what they turn to from my own personal
-          observations, but these activities are passive, and do not provide any
-          tools for the child to learn nor any ways for parents to document
-          their child's educational development. “ReadAloud” aims to solve this
-          problem by creating an app that is easy and fun to use for kids, while
-          also creating a learning experience that fosters growth. It combines
-          the educational experience of reading with animated cartoons. All the
-          while, the app provides tools that allow parents to see their child's
-          learning through achievements and progress tracking.
-        </p>
-        <h2>Identifying the User</h2>
-        <p>
-          The app is designed for young children between the ages of 6-11.
-          Children's books are provided at various levels to allow for children
-          across the age range and skill level to benefit from their experience.
-        </p>
-        <img
-          style="max-height: 75%; max-width: 100%; object-fit: contain"
-          src="projects/ReadAloud - User Persona.png"
-        />
-        <img
-          style="max-height: 75%; max-width: 100%; object-fit: contain"
-          src="projects/ReadAloud - Empathy Map.png"
-        />
-        <h2>Concept Prototype</h2>
-        <p>
-          Below is the final high fidelity concept for my app. The design
-          emphasizes a personalized experience for the user, with a minimalist
-          design that focuses the user on the reading activity.
-        </p>
-        <img
-          style="max-height: 75%; max-width: 100%; object-fit: contain"
-          src="projects/ReadAloud - High Fidelity.png"
-        />
+      <div class="g">
+        <div class="project-wrapper">
+          <h2>Concept Prototype</h2>
+          <p>
+            On the left is the final high fidelity concept for my app. The
+            design emphasizes a personalized experience for the user, with a
+            minimalist design that focuses the user on the reading activity.
+            Emphasis was placed on creating a user experience that puts achievements
+            front and center to encourage the user to continue interacting with the app.
+            As the concept of the app is to encourage the user to read. The reading screen
+            presents a simple interface layout for the user, and highlights the call to
+            action, which in this case is to flip to the next page of the book. Again,
+            this is because the primary focus of the app is to encourage the user to
+            continue to read. Because the animation element of the app is very important to
+            attract the target demographic, the panel for the animation is large and
+            remains the focus of the reading screen.
+          </p>
+        </div>
       </div>
     </div>
-    <p
-      style="
-        font-size: 1em;
-        font-style: italic;
-        margin-top: 60px;
-        margin-bottom: 60px;
-      "
-    ></p>
-    <footer>
-      <ul id="footer-socialmedia">
-        <li>
-          <a href="http://www.instagram.com/kenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-instagram-24.png"
-              width="24px"
-              height="24px"
-          /></a>
-        </li>
-        <li>
-          <a href="http://www.facebook.com/itskenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-facebook-24.png"
-              width="24px"
-              height="24px"
-          /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/kenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-linkedin-24.png"
-              width="24px"
-              height="24px"
-          /></a>
-        </li>
-        <li>
-          <a href="http://www.pinterest.com/kenoutofken/" target="_blank"
-            ><img
-              src="assets/icons8-pinterest-24.png"
-              width="24px"
-              height="24px"
-          /></a>
-        </li>
-      </ul>
-      <p>Copyright &copy Ken Yau. All rights reserved.</p>
-    </footer>
   </body>
+  <footer>
+    <ul id="footer-socialmedia">
+      <li>
+        <a href="http://www.instagram.com/kenoutofken/" target="_blank"
+          ><img src="assets/icons8-instagram-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+      <li>
+        <a href="http://www.facebook.com/itskenoutofken/" target="_blank"
+          ><img src="assets/icons8-facebook-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/kenoutofken/" target="_blank"
+          ><img src="assets/icons8-linkedin-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+      <li>
+        <a href="http://www.pinterest.com/kenoutofken/" target="_blank"
+          ><img src="assets/icons8-pinterest-24.png" width="24px" height="24px"
+        /></a>
+      </li>
+    </ul>
+    <p>Copyright &copy Ken Yau. All rights reserved.</p>
+  </footer>
 </html>

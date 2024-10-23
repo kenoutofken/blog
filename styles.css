@@ -1,3 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "a a a"
+        "b c c"
+        "d e e"
+        "f f g";
+}
+.a, .b, .c, .d, .e, .f, .g {
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.a img, .b img, .c img, .d img, .e img, .f img, .g img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.a {
+    grid-area: a;
+    padding-bottom: 50px;
+}
+.b {
+    grid-area: b;
+}
+.c {
+    grid-area: c;
+}
+.d {
+    grid-area: d;
+}
+.e {
+    grid-area: e;
+}
+.f {
+    grid-area: f;
+}
+.g {
+    grid-area: g;
+}
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+}
 header {
     display: flex;
     justify-content: space-evenly;
@@ -332,6 +383,26 @@ changes its layout when a screen size smaller than 1080px wide is used to access
     }
     ol {
         font-weight: lighter;
+    }
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g";
+    }
+    .a, .b, .c, .d, .e, .f, .g {
+        padding: 10px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
     }
 }
 @media (max-width: 1400px) {
