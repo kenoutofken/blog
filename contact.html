@@ -21,7 +21,7 @@
     <title>Ken Yau: Designer / Photographer / FE Developer</title>
   </head>
 
-  <body>
+  <body style="background-image: none; background-color: black">
     <header>
       <div>
         <a href="index.html"><img id="sitelogo" src="assets/logo.png" /></a>
@@ -31,7 +31,7 @@
       <nav class="menu">
         <ul id="menubar">
           <li>
-            <a href="index.html">HOME</a>
+            <a id="active" href="index.html">HOME</a>
           </li>
           <li>
             <a href="blog.html" style="text-decoration: none">BLOG</a>
@@ -40,9 +40,7 @@
             <a href="projects.html" style="text-decoration: none">PROJECTS</a>
           </li>
           <li>
-            <a id="active" href="links.html" style="text-decoration: none"
-              >LINKS</a
-            >
+            <a href="links.html" style="text-decoration: none">LINKS</a>
           </li>
           <li>
             <a href="contact.html" style="text-decoration: none">CONTACT</a>
@@ -84,68 +82,37 @@
         </li>
       </ul>
     </header>
-    <div class="content-wrapper">
-      <h2>My favorite websites!</h2>
-      <p>
-        This page features a curated list of websites and videos that have
-        inspired me in my creative journey. Whether you’re looking for design
-        inspiration or educational content to sharpen your skills, these
-        resources are my go-to picks.
-      </p>
-      <ol>
-        <li>
-          <a href="https://dribbble.com/">Dribble.com</a>: A vibrant community
-          of designers showcasing their work. From UI/UX design to illustration,
-          this platform is perfect for sparking new ideas.
-        </li>
-        <li>
-          <a href="http://www.behance.net/">Behance.net</a>: An online portfolio
-          platform that features some of the best creative work across
-          industries. A must-visit for design inspiration.
-        </li>
-        <li>
-          <a href="http://www.pinterest.com/">Pinterest.com</a>: My go-to for
-          collecting ideas on design trends, typography, and color palettes.
-          It’s a great way to explore different aesthetics.
-        </li>
-        <li>
-          <a href="http://www.designspriation.com/">Designspiration.com</a>:
-          Designspiration is an online platform and creative community that
-          serves as a source of visual inspiration for designers, artists, and
-          creatives across various industries.
-        </li>
-        <li>
-          <a href="http://www.awwwards.com/">Awwwards.com</a>: Awwwards is a
-          platform that recognizes and showcases the best web design and
-          development work from around the world, celebrating innovation,
-          creativity, and usability in digital design.
-        </li>
-        <li>
-          <a href="https://colorable.jxnblk.com/">Colorable</a>: This is a great
-          website that lets you test the contrast of two colors. Remember the
-          general outlines by the WCAG states that for normal text, the minimum
-          contrast ratio should be 7:1, and other elements like large text and
-          graphics should be at least 4.5:1.
-        </li>
-        <li>
-          <a href="https://www.humaaans.com/">Humaaans</a>: Humaaans is a really
-          cool website that let's you mix and match illustrations of people for
-          your own personal projects.
-        </li>
-        <li>
-          <a href="https://www.lummi.ai/">Lummi</a>: AI is becoming an
-          invaluable tool for creatives! Lummi is a website with endless AI
-          generated images that are free to use for creative projects. Amazing
-          resources to find pictures.
-        </li>
-        <li>
-          <a href="https://fontawesome.com/">Font Awesome</a>: This website
-          provides countless options for icons, including a whole library that
-          is free to use and download in SVG format. Great for projects and
-          mockups!
-        </li>
-      </ol>
+
+    <div style="width: 100%" class="row">
+      <div class="a">
+        <iframe
+          id="JotFormIFrame-242965644140256"
+          title="Contact Form"
+          onload="window.parent.scrollTo(0,0)"
+          allowtransparency="true"
+          allow="geolocation; microphone; camera; fullscreen"
+          src="https://form.jotform.com/242965644140256"
+          frameborder="0"
+          style="
+            min-width: 100%;
+            max-width: 100%;
+            height: 539px;
+            border: none;
+            border-radius: 24px;
+          "
+          scrolling="no"
+        >
+        </iframe>
+        <script src="https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js"></script>
+        <script>
+          window.jotformEmbedHandler(
+            "iframe[id='JotFormIFrame-242965644140256']",
+            "https://form.jotform.com/"
+          );
+        </script>
+      </div>
     </div>
+
     <footer>
       <div class="footercontent">
         <div>

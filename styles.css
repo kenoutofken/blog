@@ -9,6 +9,15 @@
         "b c c"
         "d e e"
         "f f g";
+        transform: translateX(-100%);
+        animation: row forwards 0.25s ease-out;
+        animation-delay: 0.5s;
+}
+@keyframes row {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .a, .b, .c, .d, .e, .f, .g {
     padding: 40px;
@@ -53,7 +62,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-/* ASSIGNMENT 03 REQUIREMENT: The following code defines a different color for my header, main (body), and footer. */
     background-color: black;
     padding-top: 30px;
     width: 100%;
@@ -67,13 +75,10 @@ header {
 #sitelogo {
     max-height: 80px;
 }
-/* ASSIGNMENT 03 REQUIREMENT: CSS Box Model is used throughout this stylesheet to create padding, margins, and borders around
-various sections to create the intended layout. */
 body {
     display: flex;
     justify-content: center;
     font-family: "Roboto", sans-serif;
-/* ASSIGNMENT 03 REQUIREMENT: The following code defines a different color for my header, main (body), and footer. */
     background-color: rgb(70, 76, 87);
     margin-left: 75px;
     margin-right: 75px;
@@ -138,13 +143,12 @@ p {
     font-weight: lighter;
     line-height: 2;
 }
-/* ASSIGNMENT 03 REQUIREMENT: The following code changes the display of my links. It makes the default color for the links red, 
-and when hovered over, it turns white. */
 a {
     text-decoration: none;
     color: #f2ac0a;
     font-weight: bold;
 }
+/* Assignment 04 (Bonus): The following CSS allows for a hover state on the links within the web page. */
 a:hover {
     color: white;
     text-decoration: underline;
@@ -167,6 +171,7 @@ a:hover {
     gap: 75px;
     font-size: 1em;
 }
+ /* Assignment 04: The navigation menu on the top is presented in a horizontal layout on large screens. */
 .menu {
     display: flex;
     font-family: "Oswald", sans-serif;
@@ -185,8 +190,6 @@ a:hover {
     padding: 8px 16px;
     color: black;
 }
-/* ASSIGNMENT 03 REQUIREMENT: The following code applies to the images in the blog section of the website. It creates a white
-border around the images for visual enhancement. */
 .blogpics {
     border: 5px solid white;
     max-width: 100%;
@@ -196,8 +199,9 @@ border around the images for visual enhancement. */
 }
 .blog {         
     font-family: "Roboto", sans-serif;
-    max-width: 1920px;
+    max-width: 1400px;
     background-color: rgba(0, 0, 0, 0.85);
+    margin: 8px 8px;
     border-radius: 24px;
     padding-left: 48px;
     padding-top: 24px;
@@ -210,14 +214,39 @@ border around the images for visual enhancement. */
     animation-delay: 0.5s;
     overflow-y: auto;
 }
+.blognav {         
+    font-family: "Roboto", sans-serif;
+    max-width: 1400px;
+    background-color: rgba(0, 0, 0, 0.85);
+    margin: 8px 8px;
+    border-radius: 24px;
+    padding-left: 48px;
+    padding-top: 24px;
+    padding-right: 48px;
+    padding-bottom: 24px;
+    color: white;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: blog 0.5s forwards ease-out;
+    animation-delay: 0.5s;
+}
+.bloglayout {
+    display: grid; 
+    grid-template-columns: 4fr 1fr;
+    gap: 10px
+}
+.blog img {
+    border: 5px solid white;
+    width: 100%;
+    border-radius: 16px;
+    margin: 8px 8px;
+}
 @keyframes blog {
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
-/* ASSIGNMENT 03 REQUIREMENT: The following code adds a margin to my <ul> and <ol> list items. The bullet points for both of
-these lists has been customized to a square. */
 ol {
     margin-left: 50px;
     font-family: helvetica, san-serif;
@@ -241,7 +270,6 @@ ul {
     display: none;
 }
 footer {
-/* ASSIGNMENT 03 REQUIREMENT: The following code defines a different color for my header, main (body), and footer. */
     background-color: black;
     padding: 10px;
     width: 100%;
@@ -251,7 +279,7 @@ footer {
     z-index: 1000;
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     font-size: 10px;
     font-style: italic;
@@ -265,6 +293,12 @@ footer {
 input[type="checkbox"] {
     display: none;
 }
+.footercontent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
 #active {
     text-decoration: none;
     color: black;
@@ -272,9 +306,44 @@ input[type="checkbox"] {
     border-radius: 8px;
     padding: 8px 16px;
 }
-/* ASSIGNMENT 03 REQUIREMENT: The following code allows for my website to be responsive. Using the media query, the website
-changes its layout when a screen size smaller than 1080px wide is used to access it. */
+#sept24 {
+    scroll-margin-top: 180px;
+}
+#oct24 {
+    scroll-margin-top: 180px;
+}
+#blognavsection {
+    scroll-margin-top: 1000px;
+}
+html {
+    scroll-behavior: smooth;
+}
 @media (max-width: 1080px) {
+    .footercontent {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .bloglayout {
+        display: grid; 
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "blognav"
+            "blog";
+        gap: 10px;
+    }
+    .blognav {
+        grid-area: blognav;
+    }
+    .blog {
+        grid-area: blog;
+    }
+    #sept24 {
+        scroll-margin-top: 120px;
+    }
+    #oct24 {
+        scroll-margin-top: 120px;
+    }
     header {
         justify-content: space-between;
         padding: 8px 12px;
@@ -310,6 +379,9 @@ changes its layout when a screen size smaller than 1080px wide is used to access
     .menu {
         display: block;
     }
+    /* Assignment 04: The navigation bar/menu collapses into a hamburger icon on the top right using the following CSS.
+    The menu is hidden to the right (-150%) until the checkbox (hamburger) is clicked, which reveals from the right
+    with a 0.3s ease. */
     #menubar {
         display: flex;
         position: fixed;
@@ -380,9 +452,11 @@ changes its layout when a screen size smaller than 1080px wide is used to access
     }
     ul {
         font-weight: lighter;
+        margin-left: 3px;
     }
     ol {
         font-weight: lighter;
+        margin-left: 3px;
     }
     .row {
         display: grid;
